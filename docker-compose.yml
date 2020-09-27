@@ -1,0 +1,14 @@
+version: '3'
+services:
+  php:
+    build: .
+    ports: 
+      - 8088:80
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+    restart: always
+
+
