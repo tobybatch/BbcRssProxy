@@ -1,0 +1,15 @@
+{
+  "require": {
+    "php": "^7.2.0",
+    "league/route": "~1.2",
+    "vlucas/phpdotenv": "^5.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "files": [
+      "controllers/Controller.php"
+    ]
+  }
+}
