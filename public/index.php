@@ -8,7 +8,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
 $dotenv->load();
 
 $router = new League\Route\RouteCollection;
-$router->addRoute('GET', '/', 'Controller::index');
+$router->addRoute('GET', '/rss.xml', 'Controller::index');
 
 $dispatcher = $router->getDispatcher();
 $request = Request::createFromGlobals();
